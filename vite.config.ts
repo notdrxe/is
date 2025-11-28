@@ -9,7 +9,7 @@ import svgLoader from 'vite-svg-loader';
 const files = fs.readdirSync('./src/components').filter((file) => file.includes('Ui'));
 
 const components = files.reduce<{ [key: string]: string }>((obj, component) => {
-  obj[component.split('.')[0]] = `src/components/${component}/${component}.vue`;
+  obj[component.split('@')[0]] = `src/components/${component}/${component}.vue`;
 
   return obj;
 }, {});

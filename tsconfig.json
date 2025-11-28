@@ -21,7 +21,7 @@
     "baseUrl": "./",
     "noEmit": true
   },
-  "include": ["src/**/*.ts", "src/*.d.ts", "src/components/**/*.vue"],
+  "include": ["src/**/*.ts", "src/*.d.ts", "src/lib/components/**/*.vue"],
   "exclude": ["node_modules", "dist", "storybook-static"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

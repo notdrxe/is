@@ -1,15 +1,14 @@
 {
-  "name": "is-components-new",
-  "description": "Is components",
-  "version": "0.0.4",
-  "license": "MIT",
+  "name": "@notdrexx/is-components-new",
+  "version": "0.0.6",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "sideEffects": false,
-  "files": [
-    "dist/*"
-  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./src/*": "./src/*"
+  },
+  "files": ["src"],
+  "types": "./src/index.ts",
+
   "scripts": {
     "dev": "storybook dev -p 6006 --no-open",
     "build": "vite build && storybook build",
